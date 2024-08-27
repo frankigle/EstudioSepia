@@ -106,8 +106,21 @@ header{
 }
 /* FOOTER */
 #footerCont{
-    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
     grid-area: footer;
     background-color:  #CFD8DC;
     
+}
+#footerCont a{
+    text-decoration: none;
+}
+#footerCont a:hover{
+    text-decoration:underline;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

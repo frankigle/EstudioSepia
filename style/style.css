@@ -34,11 +34,13 @@ header{
     background-image: url(../pictures/domos/domoVillaNoche.jpg);
     background-size:cover;
     background-position: center;
-    height: 80vh;
+    height: 45vh;
     overflow: hidden;
     
 }
-
+.navbar-nav{
+    display: flex;
+}
 .textHeader{
     padding-top: 40px;
     height: 65%;
@@ -101,14 +103,11 @@ header{
     background-color: #8BC34A;
 }
 
-.nav-link{
-
-}
 /* FOOTER */
 #footerCont{
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 35vh;
     grid-area: footer;
     background-color:  #CFD8DC;
     

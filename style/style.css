@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Cinzel", serif;
+}
+
+
+/* .cinzel-font {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+} */
+#logo{
+    width: 50vw;
+}
+#container{
+    display: grid;
+/*     grid-column: repeat(6, 1fr); */    
+    grid-template-areas: "navbar navbar navbar navbar navbar navbar"
+    "domos domos domos domos domos domos"
+    "bricks bricks bricks bricks bricks bricks"
+    "shelter shelter shelter shelter shelter shelter"
+    "footer footer footer footer footer footer";
+    gap: 20px;
+    background-color: #F5F5DC;
+  /*   justify-content: center;
+    align-items: center;
+    overflow: hidden; */
+}
+/*HEADER*/
+header{
+    grid-area: navbar;
+    background-image: url(../pictures/domos/domoVillaNoche.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 80vh;
+    overflow: hidden;
+    
+}
+
+.textHeader{
+    padding-top: 40px;
+    height: 65%;
+    text-align: center;
+    color: white
+}
+/*MAIN CONTAINER*/
+#main{
+
+}
+/*SECTIONS GENERAL*/
+.sections{
+    margin: 10px;
+}
+.boxFlexTwin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*.boxFlexTwin div{
+    width: 50%;
+
+}*/
+.domosText{
+    opacity: 0.7;
+   /*  background-color: #D8E0BB; */
+   background-color: #8BC34A;
+}
+.boxFlexPic figure img{
+    width: 60%;
+    height: 60%;
+}
+/*DOMOS*/
+#domosCont{
+    grid-area: domos;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    
+}
+/*BRICKS*/
+#bricksCont{
+    grid-area: bricks;
+    text-align: center;
+    height: auto;
+}
+.bricksText{
+    /* background-color: #B6CEC7; */
+    background-color: #C5E1A5;
+}
+/*SHELTERS*/
+#shelterCont{
+    grid-area: shelter;
+    text-align: center;
+    height: auto;
+}
+.shelterText{
+    /* background-color: #86A3C3; */
+    background-color: #8BC34A;
+}
+
+.nav-link{
+
+}
+/* FOOTER */
+#footerCont{
+    height: 20vh;
+    grid-area: footer;
+    background-color:  #CFD8DC;
+    
+}

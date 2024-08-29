@@ -4,131 +4,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style/style.css">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- favicon -->
   <link rel="shortcut icon" href="./pictures/logos/Sepia.svg" />
-  <title>Estudio Sepia</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <section id="container">
 
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="./index.html"><img id="logo" src="../pictures/logos/Sepia.svg" alt="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-light" href="./html/domos.html">Domos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="./html/bricks.html">Bricks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="./html/shelter.html">Shelter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" aria-disabled="true">Contacto</a>
-              </li>
-            </ul>
-          </div>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="./index.html"><img id="logo" src="./pictures/logos/Sepia.svg"
+            alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../html/domos.html">Domos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../html/bricks.html">Bricks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../html/shelter.html">Shelter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <div class="textHeader">
-        <h2>Sepia te abre las puertas a una nueva forma de Construir</h2>
       </div>
-    </header>
-    <section id="domosCont" class="sections">
+    </nav>
+  </header>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./pictures/domos/domoChillingCordillera.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Domos</h1>
+          <p>Descubre la magia de vivir en un domo geodésico: diseño innovador, comodidad y naturaleza en armonía</p>
+          <a class="btn btn-secondary" role="button" aria-disabled="true">Link</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./pictures/bricks/bricksHouse1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Bricks</h1>
+          <p>Some representative placeholder content for the second slide.</p>
+          <a class="btn btn-secondary" role="button" aria-disabled="true">Link</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./pictures/preFabric/preFabricadaBackk.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Shelter</h1>
+          <p>Some representative placeholder content for the third slide.</p>
+          <a class="btn btn-secondary" role="button" aria-disabled="true">Link</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section id="firstParallax" class="item">
+    <div class="img divItem">
+
+    </div>
+    <div class="divText">
       <h1>Domos</h1>
-      <div class="boxFlexTwin">
-        <div class="boxFlexPic">
-          <figure>
-            <img src="./pictures/domos/domoChillingCordillera.jpg" alt="">
-            <figcaption>Disfruta de nuestros Domos</figcaption>
-          </figure>
-        </div>
-        <div class="boxFlexText domosText">
-          <h2>Conoce mas de los Domos</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident explicabo doloribus maxime
-            expedita, iure laboriosam minima ipsum hic sed quas corporis itaque nostrum quam perferendis illum illo
-            molestias impedit?</p>
-        </div>
-      </div>
-    </section>
-    <section id="bricksCont" class="sections">
-      <h1>Bricks</h1>
-      <div class="boxFlexTwin">
-        <div class="boxFlexPic">
-          <figure>
-            <img src="./pictures/bricks/bricksDuplex.jpg" alt="">
-            <figcaption>Disfruta de nuestros Bricks</figcaption>
-          </figure>
-        </div>
-        <div class="boxFlexText bricksText">
-          <h2>Conoce mas de nuestra seccion Bricks</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident explicabo doloribus maxime
-            expedita, iure laboriosam minima ipsum hic sed quas corporis itaque nostrum quam perferendis illum illo
-            molestias impedit?</p>
-        </div>
-      </div>
-    </section>
-    <section id="shelterCont" class="sections">
-      <h1>Shelter</h1>
-      <div class="boxFlexTwin">
-        <div class="boxFlexPic">
-          <figure>
-            <img src="./pictures/preFabric/preFabricadaFrente.jpg" alt="">
-            <figcaption>Disfruta de nuestros Domos</figcaption>
-          </figure>
-        </div>
-        <div class="boxFlexText shelterText">
-          <h2>Conoce mas de Nuestros Shelters</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident explicabo doloribus maxime
-            expedita, iure laboriosam minima ipsum hic sed quas corporis itaque nostrum quam perferendis illum illo
-            molestias impedit?</p>
-        </div>
-      </div>
-    </section>
-    <footer id="footerCont">
-      <section class="companyInfo">
-        <h2>Estudios Sepia</h2>
-        <p>Direccion: Calle chespirito 1524.</p>
-        <p>Trevelin, Chubut, Argentina.</p>
-        <p>(+59)1164788782</p>
-      </section>
-      <section class="road">
-        <h2><a href="#">Home</a></h2>
-        <p><a href="#">domos</a></p>
-        <p><a href="#">bricks</a></p>
-        <p><a href="#">Shelter</a></p>
-
-      </section>
-      <section class="socialMedia">
-        <h2>Redes</h2>
-        <a href=""><img src="./pictures/Social Media/icons8-instagram-36.png" alt="instagram"></a>
-        <a href=""><img src="./pictures/Social Media/icons8-facebook-36.png" alt=""></a>
-        <a href=""><img src="./pictures/Social Media/icons8-whatsapp-36.png" alt=""></a>
-      </section>
-    </footer>
+      <p class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis harum accusamus blanditiis
+        quasi hic laudantium laboriosam assumenda repudiandae minima porro delectus ipsa dicta, dolor culpa id ratione
+        sunt maiores doloremque.</p>
+    </div>
   </section>
+  <section id="secondParallax" class="item">
 
+    <div class="divText">
+      <h1>Bricks</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, officiis ipsum. Dolorum fuga
+        quaerat placeat, accusantium officiis ex corrupti iure repellendus pariatur facilis velit optio
+        voluptate, ab possimus rerum modi.</p>
+    </div>
+    <div class="img divItem">
+    </div>
+
+
+  </section>
+  <section id="thirdParallax" class="item">
+    <div class=" img divItem">
+    </div>
+    <div class="divText">
+      <h1>Shelters</h1>
+      <p id="mainp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, ipsa laboriosam enim vero sequi
+        voluptates possimus corrupti aliquam eaque, exercitationem natus sed tempore voluptate at voluptatem.
+        Quasi officiis in modi.</p>
+    </div>
+  </section>
+  <section id="contactCont">
+
+  </section>
+  <footer id="footerCont">
+    <section class="companyInfo footItem">
+      <h2>Estudios Sepia</h2>
+      <p>Email: proyectualsepia@gmail.com</p>
+      <p>Tel: 2945 59-9477 / 11 6963 - 4745</p>
+      <p>Trevelin, Chubut, Argentina.</p>
+    </section>
+    <section class="road footItem">
+      <h2><a href="#">Home</a></h2>
+      <p><a href="#">domos</a></p>
+      <p><a href="#">bricks</a></p>
+      <p><a href="#">Shelter</a></p>
+
+    </section>
+    <section class="socialMedia footItem">
+      <h2>Redes</h2>
+      <a href="www.instagram.com"><img src="./pictures/Social Media/icons8-instagram-36.png" alt="instagram"></a>
+      <a href="www.facebook.com"><img src="./pictures/Social Media/icons8-facebook-36.png" alt=""></a>
+      <a href="www.whatsapp.com"><img src="./pictures/Social Media/icons8-whatsapp-36.png" alt=""></a>
+    </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
 
 </html>
-

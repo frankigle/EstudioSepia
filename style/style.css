@@ -13,15 +13,24 @@
     height: 85vh;
 }
 
-/* header */
 
 
+/* FONTS */
 .cinzel-font {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
+.open-sans-font {
+  font-family: "Open Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* header */
 #logo{
     width: 50vw;
     height: 13vh;
@@ -139,6 +148,7 @@ h1{
 p{
     /* font-size: 24px; */
     text-align: center;
+    font-family: "Open Sans";
 }
 /* FOOTER */
 #footerCont{
@@ -147,7 +157,7 @@ p{
     height: 25vh;
     grid-area: footer;
     background-color:  #CFD8DC;
-    gap: 50px;
+        gap: 50px;
     
 }
 #footerCont a{

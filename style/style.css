@@ -160,10 +160,10 @@ p{
 #footerCont{
     display: flex;
     justify-content: center;
-    height: 30vh;
+    height: 35vh;
     grid-area: footer;
     background-color:  #CFD8DC;
-    gap: 40px;
+    gap: 25px;
     
 }
 #footerCont a{
@@ -171,6 +171,9 @@ p{
 }
 #footerCont a:hover{
     text-decoration:underline;
+}
+.road{
+    height: 20vh;
 }
 .footItem{
     display: flex;
@@ -180,7 +183,7 @@ p{
     padding: 10px;
 }
 ion-icon {
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 /* Contacto HTML */

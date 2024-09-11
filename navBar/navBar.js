@@ -36,11 +36,8 @@ const collapsedMenu = () => {
     }
 }
 const scrollNavBar = () => {
-    if(start == 0)
-    {
-        lista.style.display = 'flex';
-        count = 0;
-    }
+    lista.style.display = 'none';
+    count = 0;
 }
 
 

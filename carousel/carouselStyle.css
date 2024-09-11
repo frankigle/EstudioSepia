@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
+.carouselCont{
+    display: flex;
+    margin: 3px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #nosotrosCarousel{
     display: flex;
     margin: 3px;
@@ -10,51 +19,27 @@
     height: 85vh;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../pictures/Casa-prefabricada-madera.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(../pictures/Casa-prefabricada-madera.webp);
 }
 #shelterCarousel{
-    display: flex;
-    margin: 3px;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
     background-image: url(../pictures/preFabric/preFabricadaBackClose.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #domesCarousel{
-    display: flex;
-    margin: 3px;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
     background-image: url(../pictures/domos/domoChillingCordillera.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #bricksCarousel{
-    display: flex;
-    margin: 3px;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
     background-image: url(../pictures/bricks/bricksDuplex.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .button{
-    height: 80vh;
+    height: 100%;
     width: 20%;
     align-items: center;
 }
 .button button{
     background: transparent;
-    width: 100%;
+    width: 20vw;
     height: 100%;
     border: none;
     color: black;
@@ -66,7 +51,7 @@ ion-icon {
 .button:hover button{
     background: black;
     opacity: 0.5;
-    width: 100%;
+    width: 20vw;
     height: 100%;
     border: none;
     color: white;
@@ -84,6 +69,7 @@ ion-icon {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    text-align: center;
 }
 /* #shelterContent{
     color: aliceblue;

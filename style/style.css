@@ -33,7 +33,7 @@ body{
     "wdth" 100;
 }
 /* header */
-#logo{
+/* #logo{
     width: 50vw;
     height: 13vh;
 }
@@ -42,6 +42,7 @@ header{
     background-color: #4A4A4A;
     background-size:cover;
     background-position: center;
+    width: 100%;
     height: 15vh;
     overflow: hidden;
     margin-bottom: 10px;
@@ -62,7 +63,7 @@ header{
 .navbar-brand img{
     height: 18vh;
     width: 50%;
-}
+} */
 /*  */
 
 #firstparallax{
@@ -160,10 +161,9 @@ p{
 #footerCont{
     display: flex;
     justify-content: center;
-    height: 35vh;
-    grid-area: footer;
     background-color:  #CFD8DC;
     gap: 25px;
+    overflow: hidden;
     
 }
 #footerCont a{
@@ -173,7 +173,6 @@ p{
     text-decoration:underline;
 }
 .road{
-    height: 20vh;
 }
 .footItem{
     display: flex;
@@ -217,4 +216,31 @@ ion-icon {
     height: 50vh;
     padding: 30px;
     background-color: #CFD8DC;
+}
+
+/* Contacto Section */
+#contactoSection{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#contactoSection h1{
+    text-align: center;
+}
+.contactoSectionItem{
+    width: 70%;
+    height: 35%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+@media (min-width: 769px)
+{
+    #contactoSection{
+        flex-direction: row;
+    }
 }

@@ -16,47 +16,29 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet">
   <!-- CSS -->
+  <link rel="stylesheet" href="./navBar/navBar.css">
+  <link rel="stylesheet" href="./navBar/navBarMediaQuery.css">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./carousel/carouselStyle.css">
   <title>Sepia</title>
 </head>
 
 <body>
-
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="./index.html"><img id="logo" src="./pictures/logos/Sepia.svg"
-            alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./html/nosotros.html"><button type="button"
-                  class="btn btn-light">Nosotros</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./html/shelter.html"><button type="button"
-                  class="btn btn-light">Shelters</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./html/bricks.html"><button type="button"
-                  class="btn btn-light">Bricks</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./html/domos.html"><button type="button"
-                  class="btn btn-light">Domes</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./html/contacto.html"><button type="button"
-                  class="btn btn-light">Contacto</button></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <header id="headerCont">
+    <nav id="navBar">
+      <section id="logo" class="navBarItem">
+        <a href="./index.html"><img src="./pictures/logos/Sepia.svg" alt="Logo"></a>
+      </section>
+      <button id="navButton">☰</button>
+      <section id="options" class="navBarItem">
+        <ul id="lista">
+          <li><a href="./html/nosotros.html"><button>Nosotros</button></a></li>
+          <li><a href="./html/shelter.html"><button>Shelter</button></a></li>
+          <li><a href="./html/bricks.html"><button>Bricks</button></a></li>
+          <li><a href="./html/domos.html"><button>Domes</button></a></li>
+          <li><a href="./html/nosotros.html"><button>Contacto</button></a></li>
+        </ul>
+      </section>
     </nav>
   </header>
   <div id="nosotrosCarousel">
@@ -75,7 +57,7 @@
       </button>
     </section>
   </div>
-  <div id="shelterCarousel">
+  <div id="shelterCarousel" class="carouselCont">
     <section id="shelterButtonLeft" class="button">
       <button>
         <ion-icon name="arrow-back-circle-outline"></ion-icon>
@@ -90,7 +72,7 @@
       </button>
     </section>
   </div>
-  <div id="domesCarousel">
+  <div id="domesCarousel" class="carouselCont">
     <section id="domesButtonLeft" class="button">
       <button>
         <ion-icon name="arrow-back-circle-outline"></ion-icon>
@@ -104,7 +86,7 @@
       </button>
     </section>
   </div>
-  <div id="bricksCarousel">
+  <div id="bricksCarousel" class="carouselCont">
     <section id="bricksButtonLeft" class="button">
       <button>
         <ion-icon name="arrow-back-circle-outline"></ion-icon>
@@ -118,6 +100,26 @@
       </button>
     </section>
   </div>
+  <h1>contactanos</h1>
+  <section id="contactoSection">
+    <div class="direccion contactoSectionItem">
+      <ion-icon name="location-outline"></ion-icon>
+      <h1>Direccion</h1>
+      <p>Trevelin, Chubut, Argentina.</p>
+    </div>
+    <div class="telefonos contactoSectionItem">
+      <ion-icon name="call-outline"></ion-icon>
+      <h1>Telefonos</h1>
+      <p>(+54)2945 59-9477</p>
+      <p>(+54)11 6963 - 4745</p>
+    </div>
+    <div class="email contactoSectionItem">
+      <ion-icon name="at-outline"></ion-icon>
+      <h1>Email</h1>
+      <p>proyectualsepia@gmail.com</p>
+    </div>
+  </section>
+
 
 
 
@@ -144,6 +146,7 @@
     </section>
   </footer>
   <!-- Javascript -->
+  <script src="./navBar/navBar.js"></script>
   <script src="./carousel/carouselScript.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

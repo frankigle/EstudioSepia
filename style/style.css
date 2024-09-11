@@ -224,6 +224,7 @@ ion-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
     align-items: center;
 }
 #contactoSection h1{
@@ -238,7 +239,7 @@ ion-icon {
 
 }
 
-@media (min-width: 769px)
+@media only screen and (min-width: 769px)
 {
     #contactoSection{
         flex-direction: row;
